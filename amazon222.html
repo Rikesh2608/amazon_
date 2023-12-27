@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 60px;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        background-color: rgb(19,25,33);
+        color: white;
+        position: fixed;
+        top: 0;
+        align-items: center;
+        justify-content: space-between;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 68px;
+    }
+    @media (max-width:500px) {
+        
+    }
+    .left-section{
+        display: flex;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+    .middle-section{
+        flex: 1;
+        max-width: 850px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 4px;
+        display: flex;
+        background-color: rgb(254,189,105);
+    }
+    .search-box{
+        flex: 1;
+        width: 0;
+        font-size: 16px;
+        height: 38px;
+        padding-left: 15px;
+        border: none;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0
+    }
+    .search-icon{
+        height: 22px;
+        padding-left: 8px;
+        padding-top: 4px;
+        padding-right: 8px;
+        margin-top: 3px;
+    }
+    .right-section{
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        width: 250px;
+    }
+    .cart-flex{
+        display: flex;
+        position: relative;
+        padding: 8px 15px;
+        cursor: pointer;
+    }
+    
+    .cart-num{
+        position: absolute;
+        top:6px;
+        left:39px;
+        color: rgb(240,136,40);
+    }
+    .cart-design{
+        position: absolute;
+        right: -18px;
+        bottom: 10px;
+    }
+    .cart{
+        width: 50px;
+    }
+    .amazon-logo{
+        width: 100px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    @media (max-width:1000px) {
+        .products{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+    @media (max-width:850px) {
+        .products{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+    @media (max-width:700px) {
+        .products{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    .product-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 40px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-right:1px solid rgb(231, 231, 231);
+        border-bottom:1px solid rgb(231, 231, 231);
+    }
+    .product-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+    .product-image{
+        max-width: 100%;
+        max-height: 100%;
+        background-color: transparent;
+    }
+    .product-bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .product-name{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .ratings{
+        width: 100px;
+        margin-right: 6px;
+    }
+    .product-cost{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .product-quantity{
+        border: solid;
+        border-color: rgb(167, 166, 166);
+        border-radius: 5px;
+        padding: 4px 8px;
+        width: 50px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+    .reviews{
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .add-button-flex{
+        display: flex;
+        justify-content: center;
+    }
+    .add-cart{
+        background-color: rgb(255,216,20);
+        padding: 8px 40px;
+        color: black;
+        border-radius: 16px;
+        border-color: rgb(252,210,0);
+        cursor: pointer;
+        border-style: solid;
+        box-shadow:  rgba(213, 217, 217, 0.5) ;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="left-section">
+        <img src="amazon-logo-white.png" class="amazon-logo">
+    </div>
+    <div class="middle-section">
+        <input type="text" placeholder="Search" class="search-box">
+        <img src="search-icon.png" class="search-icon">
+    </div>
+    <div class="right-section">
+        <div>Returns & Orders</div>
+        <div class="cart-flex">
+            <img src="cart-icon.png" class="cart">
+            <div class="cart-num">1</div>
+            <div style="font-weight: bold;" class="cart-design">Cart</div>
+        </div>
+    </div>
+</div>
+
+<div class="products">
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="athletic-cotton-socks-6-pairs.jpg" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                Black and Gray Athletic Cotton Socks - 6 Pairs
+            </div>
+            <div class="reviews">
+                <img src="rating-45.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)"> 87</div>
+            </div>
+            <div class="product-cost">
+                $10.90
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="intermediate-composite-basketball.jpg" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                Intermediate Size Basketball
+            </div>
+            <div class="reviews">
+                <img src="rating-4.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)"> 127</div>
+            </div>
+            <div class="product-cost">
+                $20.95
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="adults-plain-cotton-tshirt-2-pack-teal.jpg" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                Adults Plain Cotton T-Shirt-2-Pack
+            </div>
+            <div class="reviews">
+                <img src="rating-45.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)"> 56</div>
+            </div>
+            <div class="product-cost">
+                $7.99
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="athletic-cotton-socks-6-pairs.jpg" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                Black and Gray Athletic Cotton Socks - 6 Pairs
+            </div>
+            <div class="reviews">
+                <img src="rating-45.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)"> 87</div>
+            </div>
+            <div class="product-cost">
+                $10.90
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="black-2-slot-toaster.jpg" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                Black and Gray Athletic Cotton Socks - 6 Pairs
+            </div>
+            <div class="reviews">
+                <img src="rating-5.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)"> 87</div>
+            </div>
+            <div class="product-cost">
+                $18.99
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="6-piece-white-dinner-plate-set.jpg" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                6 Piece White Dinner Plate Set
+            </div>
+            <div class="reviews">
+                <img src="rating-4.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)"> 37</div>
+            </div>
+            <div class="product-cost">
+                $20.67
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="6-piece-non-stick-baking-set.webp" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                6-Piece Nonstick, Carbon Steel Oven Bakeware Baking
+            </div>
+            <div class="reviews">
+                <img src="rating-45.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)">175</div>
+            </div>
+            <div class="product-cost">
+                $34.99
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="plain-hooded-fleece-sweatshirt-yellow.jpg" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                Plain Hooded Fleece Sweatshirt
+            </div>
+            <div class="reviews">
+                <img src="rating-45.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)"> 317</div>
+            </div>
+            <div class="product-cost">
+                $24.00
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="luxury-tower-set-6-piece.jpg" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                Luxury Towel Set - Graphite Gray
+            </div>
+            <div class="reviews">
+                <img src="rating-45.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)"> 144</div>
+            </div>
+            <div class="product-cost">
+                $35.99
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img src="liquid-laundry-detergent-plain.jpg" class="product-image">
+        </div>
+        <div class="product-bottom">
+            <div class="product-name">
+                Liquid Laundry Detergent, 110 Loads,
+            </div>
+            <div class="reviews">
+                <img src="rating-45.png" class="ratings">   
+                <div style="color:rgb(1, 124, 182)"> 305</div>
+            </div>
+            <div class="product-cost">
+                $28.99
+            </div>
+            <button class="product-quantity">1</button>
+            <div class="add-button-flex">
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+
+    
+
+</script>
+
+</body>
+</html>

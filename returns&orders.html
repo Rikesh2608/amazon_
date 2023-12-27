@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+        font-family: roboto;
+        margin:96px;
+        }
+        .header{
+            display: flex;
+            align-items: center; 
+            background-color: rgb(19,25,33);
+            color: white;
+            position: fixed;
+            top: 0;
+            align-items: center;
+            justify-content: space-between;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            height: 68px;
+        }
+        @media (max-width:500px) {
+            
+        }
+        .left-section{
+            display: flex;
+            margin-left: 20px;
+            margin-right: 50px;
+        }
+        .middle-section{
+            flex: 1;
+            max-width: 850px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 4px;
+            display: flex;
+            background-color: rgb(254,189,105);
+        }
+        .search-box{
+            flex: 1;
+            width: 0;
+            font-size: 16px;
+            height: 38px;
+            padding-left: 15px;
+            border: none;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0
+        }
+        .search-icon{
+            height: 22px;
+            padding-left: 8px;
+            padding-top: 4px;
+            padding-right: 8px;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+        .right-section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 20px;
+            cursor: pointer;
+            width: 250px;
+        }
+        .returns{
+            margin-left: 10px;
+            padding: 8px;
+        }
+        .returns:hover,.cart-flex:hover{
+            border: 1px solid white;
+        }
+        .cart-flex{
+            position: relative;
+            cursor: pointer;
+            padding: 8px 38px 8px 8px;
+        }
+        .cart-num{
+            position: absolute;
+            top:6px;
+            text-align: center;
+            left: 35%;
+            font-weight: bold;
+            color: rgb(240,136,40);
+        }
+        .cart-design{
+            position: absolute;
+            right: 6px;
+            bottom: 12px;
+        }
+        .cart{
+            width: 55px;
+        }
+        .amazon-logo{
+            width: 100px;
+            cursor: pointer;
+        }
+        .order-details-container{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(173, 164, 164);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .orders-description{
+            padding: 20px;
+            background-color: rgb(240, 242, 242);
+            border-bottom-color:1px solid rgb(213, 217, 217);
+            display: grid;
+            grid-template-columns: 140px 1fr 300px;
+        }
+        .product-details-container{
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            padding:0 30px;
+        }
+        .product-left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 40px;
+        }
+        .product-middle{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .product-title{
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .buy-again{
+            cursor: pointer;
+            display: flex;
+            margin-top: 10px;
+            width: 115px;
+            padding: 8px 20px;
+            border-radius: 10px;
+            background-color: rgb(255, 204, 0);
+        }
+        .buy-again img{
+            margin-right: 10px;
+        }
+        .product-right{
+            display: flex;
+            align-items: start;
+            width: 300px;
+            margin-left: 100px;
+        }
+        .product-right div{
+            background-color: white;
+            border: 1px solid rgb(173, 164, 164);
+            box-shadow: 1px 2px 2px rgba(0,0,0,0.15);
+            cursor: pointer;
+            padding: 10px 60px;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Your Orders</h1>
+<div class="header">
+    <div class="left-section">
+        <a href="amazon.html">
+            <img src="amazon-logo-white.png" class="amazon-logo">
+        </a>
+    </div>
+    <div class="middle-section">
+        <input type="text" placeholder="Search" class="search-box">
+        <img src="search-icon.png" class="search-icon">
+    </div>
+    <div class="right-section">
+        <div class="returns">
+            <div style="display: block;">Returns </div>
+            <span style="font-size: 1.1em; font-weight: bold;">& Orders</span>
+        </div>
+        <div class="cart-flex">
+            <a href="checkout.html" style="text-decoration: none; color: white;">
+                <img src="cart-icon.png" class="cart">
+                <div class="cart-num">0</div>
+                <div style="font-weight: bold;" class="cart-design">Cart</div>
+            </a>    
+        </div>
+    </div>
+</div>
+
+<div class="order-details-container">
+    <div class="orders-description">
+        <div class="description-left">
+            <div style="font-weight: 500;">Order Placed:</div>
+            <div>December 24</div>
+        </div>
+        <div class="description-middle">
+            <div style="font-weight: 500;">Total:</div>
+            <div>$35.06</div>
+        </div>
+        <div class="description-right">
+            <div style="font-weight: 500;">ORDER ID:</div>
+            <div>27cba69d-4c3d-4098-b42d-ac7fa62b7664</div>
+        </div>
+    </div>
+
+    <div class="product-details-container">
+        <div class="product-left">
+            <img src="athletic-cotton-socks-6-pairs.jpg" width="100px">
+        </div>
+        <div class="product-middle">
+            <div class="product-title">
+                Black and Gray Athletic Cotton Socks - 6 Pairs
+            </div>
+            <div>
+                Arriving on: December 27
+            </div>
+            <div>
+                Quantity: 1
+            </div>
+            <div class="buy-again">
+            <img src="buy-again.png" width="20px"> Buy it again
+            </div>
+        </div>
+        <div class="product-right">
+            <div>Track package</div>
+        </div>
+    </div>
+
+    <div class="product-details-container">
+        <div class="product-left">
+            <img src="adults-plain-cotton-tshirt-2-pack-teal.jpg" width="100px">
+        </div>
+        <div class="product-middle">
+            <div class="product-title">
+                Adults Plain Cotton T-Shirt - 2 Pack
+            </div>
+            <div>
+                Arriving on: January 2
+            </div>
+            <div>
+                Quantity: 2
+            </div>
+            <div class="buy-again">
+            <img src="buy-again.png" width="20px"> Buy it again
+            </div>
+        </div>
+        <div class="product-right">
+            <div>Track package</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

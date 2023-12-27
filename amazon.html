@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="amazon.css"> 
+</head>
+<body>
+    
+<div class="header">
+    <div class="left-section">
+        <a href="amazon.html">
+            <img src="amazon-logo-white.png" class="amazon-logo">
+        </a>
+    </div>
+    <div class="middle-section">
+        <input type="text" placeholder="Search" class="search-box">
+        <img src="search-icon.png" class="search-icon">
+    </div>
+    <div class="right-section">
+        <div class="returns">
+            <a href="returns&orders.html" style="text-decoration: none; color: white;">
+                <div style="display: block;">Returns </div>
+                <span style="font-size: 1.1em; font-weight: bold;">& Orders</span>
+            </a>
+        </div>
+        <div class="cart-flex" onclick="cart_fun()">
+            <a href="checkout.html" style="text-decoration: none; color: white;">
+                <img src="cart-icon.png" class="cart">
+                <div class="cart-num"></div>
+                <div style="font-weight: bold;" class="cart-design">Cart</div>
+            </a>    
+        </div>
+    </div>
+</div>
+
+<div class="products js-products">siuu</div>
+
+<script type="module"  src="amazon.js"></script>
+
+</body>
+</html>

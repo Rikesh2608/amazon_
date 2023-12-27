@@ -1,0 +1,183 @@
+body{
+    font-family: Roboto,montserrat;
+    margin: 0 28px;
+    padding-top: 120px; 
+    padding-bottom: 120px;
+}
+.header{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    padding: 0px 28px;
+    z-index: 1;
+    background-color: white;
+}
+.logo{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.header-leftsection{
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.header-middlesection{
+    font-size: 22px;
+    font-weight: 500;
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+.header-rightsection{
+    width: 100px;
+    display: flex;
+    justify-content: end;
+}
+.cart-page{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+}
+.invoice{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgb(222, 220, 220);
+    margin-left: 20px;
+}
+.invoice span{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 22px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.invoice-upper{
+    border-bottom: 1px solid rgb(100,100,100);
+}
+.invoice-upper,.invoice-middle{
+    display: flex;
+    justify-content: space-between;
+}
+.invoice-upper div,.invoice-middle div{
+    margin-bottom: 8px;
+}
+.invoice-bottom{
+    display: flex;
+    flex-direction: column;
+}
+.invoice-bottom div{
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+}
+.paypal-button{
+    background-color: orange;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.debit-button{
+    background-color: rgba(0,0,0,0.9);
+    padding: 10px;
+    color: white;
+    vertical-align: top;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.footage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footage img{
+    width: 50px;
+    margin-left: 10px;
+}
+.cart-leftsection{
+    display: flex;
+    width: 350px;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    margin:10px ;
+}
+.cart-header span{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 22px;
+    color:rgb(0,118,0); 
+    font-weight: bold;
+    font-size: 1.2em; 
+}
+.product-container{
+    border: 1px solid rgb(222, 220, 220);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 620px;
+}
+.product-img{
+    width: 100px;
+}
+.cart-leftsection{
+    display: flex;
+    flex-direction: row;
+}
+.product-details{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.product-name,
+.product-price{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cart-container{
+    display: flex;
+}
+.delivery{
+    color: rgb(0,118,0);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 0;
+}
+.delivery-container{
+    margin-left: 20px;
+}
+.delivery-options{
+    display: flex;
+    align-items: center;
+}
+.delivery-options input{
+    margin-right: 10px;
+}
+.delivery div{
+    display: flex;
+    flex-direction: column;
+}
+.delivery-date{
+    color: rgb(100,100,100);
+    font-weight: normal;
+}
+.quantity-container{
+    display: flex;
+    align-items: center;
+}
+.quantity-container span{
+    color:rgb(1, 124, 182);
+    margin-left: 2px;
+    cursor: pointer;
+}
+.quantity-container span:hover{
+    color: darkred;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>Cart</Title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-leftsection">
+        <a href="amazon.html">
+            <img src="amazon-logo.png" class="logo">
+        </a>
+    </div>
+    <div class="header-middlesection">
+        Checkout (<span style="color: #007185;">2 Items</span>)
+    </div>
+    <div class="header-rightsection">
+        <img src="checkout-lock-icon.png" >
+    </div>
+</div>
+
+<h2>Review Your Order</h2>
+<div class="cart-page">
+
+    <div class="cart-summary">
+    
+        <div class="product-container">
+    
+            <div class="cart">
+    
+                <div class="cart-header">
+                    <span>Delivery Date: Tuesday,January 2</span>   
+                </div> 
+    
+                <div class="cart-container">
+    
+                    <section class="cart-leftsection">
+                        <div class="product-img-container">
+                            <img class="product-img" src="adults-plain-cotton-tshirt-2-pack-teal.jpg" >
+                        </div>
+                        <div class="product-details">
+                            <div class="product-name">
+                                Adults Plain Cotton T-Shirt - 2 Pack
+                            </div>
+                            <div class="product-price">
+                                $7.99
+                            </div>
+                            <div >
+                                Quantity: 1 <span style="color:rgb(1, 124, 182); cursor:pointer;">
+                                    <span class="Update">Update</span>
+                                    <input type="number" style="width:30px" placeholder="1">
+                                    <span class="delete">Delete</span>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <section class="delivery-container">
+                        <div style="font-weight: bold;">Choose a delivery option:</div>        
+                        <div class="delivery-options">
+                                <input type="radio" name="delivery">
+                            <div class="delivery">
+                                <div>
+                                    Tuesday,January 2
+                                </div>
+                                <div class="delivery-date">FREE Shipping</div>
+                            </div>
+                        </div>
+                        <div class="delivery-options">
+                            <input type="radio" name="delivery">
+                        <div class="delivery">
+                            Wednesday,December 27
+                            <div class="delivery-date">$4.99 - Shipping</div>
+                        </div>
+                        </div>
+                        <div class="delivery-options">
+                            <input type="radio" name="delivery">
+                        <div class="delivery">
+                            Monday, December 25
+                            <div class="delivery-date">$9.99 - Shipping</div>
+                        </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-container">
+            <div class="cart">
+                <div class="cart-header">
+                    <span>Delivery Date: Tuesday,January 2</span>   
+                </div>
+                <div class="cart-container">
+        
+                    <section class="cart-leftsection">
+                        <div class="cart-left-left">
+                            <img class="product-img" src="black-2-slot-toaster.jpg">
+                        </div>
+                        <div class="product-details">
+                            <div class="product-name">
+                                2 Slot Toaster - Black
+                            </div>
+                            <div class="product-price">
+                                $18.99
+                            </div>
+                            <div>
+                                Quantity: 1 <span style="color:rgb(1, 124, 182)">Update Delete</span>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section class="delivery-container">
+                        <div style="font-weight: bold;">Choose a delivery option:</div>        
+                        <div class="delivery">
+                            Tuesday,January 2
+                            <div class="delivery-date">FREE Shipping</div>
+                        </div>
+                        <div class="delivery">
+                            Wednesday,December 27
+                            <div class="delivery-date">$4.99 - Shipping</div>
+                        </div>
+                        <div class="delivery">
+                            Monday, December 25
+                            <div class="delivery-date">$9.99 - Shipping</div>
+                        </div>
+                    </section>
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+    <div class="invoice-container">
+        <div class="invoice">
+            <span>Order Summary</span>
+            <div class="invoice-upper">
+                <div class="invoice-upper-left">
+                    <div class="invoice-items">
+                        Items (2):
+                    </div>
+                    <div>
+                        Shipping & Handling :
+                    </div>
+                    <div>
+                        Total before tax:
+                    </div>
+                    <div>
+                        Estimated tax (10%):
+                    </div>
+                </div>
+                <div class="invoice-upper-right">
+                    <div>
+                        $26.98
+                    </div>
+                    <div>
+                        $0.00
+                    </div>
+                    <hr>
+                    <div>
+                        $26.98
+                    </div>
+                    <div>
+                        $2.70
+                    </div>
+                </div>
+            </div>
+            <div class="invoice-middle">
+                <div class="invoice-middle-left">
+                    <h2 style="color: darkred;">
+                        Order Total:
+                    </h2>
+                    <div style="display: flex; align-items: center;">
+                        Use PayPal <input style="margin:1px 0px 0px 10px;" type="checkbox">
+                    </div>
+                </div>
+                <div class="invoice-middle-right">
+                    <h2 style="color: darkred;">$29.68</h2> 
+                </div>
+            </div>
+            <div class="invoice-bottom">
+                <div class="paypal-button"><img src="paypal.svg"></div>
+                <div class="debit-button"><img src="debit-card.svg" style="margin-right: 10px;">Debit or Credit Card</div>
+                <div class="footage" style="color:rgba(0,0,0,0.8); font-size: 0.8em; font-style: italic;">
+                    Powered by <img src="paypal.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="module" src="cart.js"></script>
+
+</body>
+</html>
